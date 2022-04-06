@@ -11,7 +11,7 @@ namespace BartberBookingTatiana
 {
 
 
-    public partial class userLogin
+    public partial class adminLogin
     {
 
         /// <summary>
