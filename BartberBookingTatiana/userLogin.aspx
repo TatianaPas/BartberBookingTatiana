@@ -5,7 +5,7 @@
 
     <div class="container mb-4">
         <div class="row">
-            <div class="col-md-6 mx-auto">
+            <div class="col-lg-6 mx-auto">
                
                <div class="shadow p-1 mb-1 bg-light rounded">
                 <div class="card bg-white mb-3">

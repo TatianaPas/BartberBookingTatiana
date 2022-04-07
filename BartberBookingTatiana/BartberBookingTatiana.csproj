@@ -69,9 +69,12 @@
   <ItemGroup>
     <Content Include="adminLogin.aspx" />
     <Content Include="CSS\style.css" />
+    <Content Include="images\calendar_icon.png" />
+    <Content Include="images\calendar_vector.png" />
     <Content Include="images\logo.jpg" />
     <Content Include="images\logoFade-round.png" />
     <Content Include="signup.aspx" />
+    <Content Include="userDashboard.aspx" />
     <Content Include="userLogin.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -98,6 +101,13 @@
     </Compile>
     <Compile Include="signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userDashboard.aspx.cs">
+      <DependentUpon>userDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userDashboard.aspx.designer.cs">
+      <DependentUpon>userDashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="userLogin.aspx.cs">
       <DependentUpon>userLogin.aspx</DependentUpon>
