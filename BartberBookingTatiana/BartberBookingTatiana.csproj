@@ -78,6 +78,7 @@
     <Content Include="userLogin.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="clientManagement.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="adminLogin.aspx.cs">
@@ -122,6 +123,13 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clientManagement.aspx.cs">
+      <DependentUpon>clientManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="clientManagement.aspx.designer.cs">
+      <DependentUpon>clientManagement.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
