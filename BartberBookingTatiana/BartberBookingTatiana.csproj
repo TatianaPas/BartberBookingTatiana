@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminLogin.aspx" />
+    <Content Include="bookingForm.aspx" />
     <Content Include="CSS\style.css" />
     <Content Include="images\calendar_icon.png" />
     <Content Include="images\calendar_vector.png" />
@@ -87,6 +88,13 @@
     </Compile>
     <Compile Include="adminLogin.aspx.designer.cs">
       <DependentUpon>adminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookingForm.aspx.cs">
+      <DependentUpon>bookingForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookingForm.aspx.designer.cs">
+      <DependentUpon>bookingForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="main.Master.cs">
       <DependentUpon>main.Master</DependentUpon>
