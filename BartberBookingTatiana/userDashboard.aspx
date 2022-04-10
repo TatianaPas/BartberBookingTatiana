@@ -110,18 +110,12 @@
                             <div class="col">
                                 <asp:GridView ID="GridView1" class="table table-striped table-boarded" runat="server"></asp:GridView>
                                 </div>
-                        </div>
-
-                        
-                        </div>
-                        
-                </div>
-                   
+                        </div>                     
+                        </div>                       
+                </div>                  
                     </div>
-               
-              
-               
             </div>
+
         </div>
 
     </div>

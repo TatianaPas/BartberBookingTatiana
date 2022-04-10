@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminAppointmentManagement.aspx" />
     <Content Include="adminLogin.aspx" />
     <Content Include="bookingForm.aspx" />
     <Content Include="CSS\style.css" />
@@ -82,6 +83,13 @@
     <Content Include="clientManagement.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminAppointmentManagement.aspx.cs">
+      <DependentUpon>AdminAppointmentManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAppointmentManagement.aspx.designer.cs">
+      <DependentUpon>AdminAppointmentManagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adminLogin.aspx.cs">
       <DependentUpon>adminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
