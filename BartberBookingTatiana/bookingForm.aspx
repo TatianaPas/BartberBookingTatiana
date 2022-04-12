@@ -31,7 +31,7 @@
 
                             <div class="form-group">
                            <label>Choose a Date:</label>
-                            <EditItemTemplate> <asp:TextBox ID="TxtDob" runat="server" Text='<%# Bind("DateofBirth", "{0:yyyy-MM-dd}") %>' TextMode="Date"></asp:TextBox>    
+                             <asp:TextBox class="form-control" ID="TextBox4" runat="server" placeholder="" TextMode="Date" ></asp:TextBox>  
                               </div>  
                         </div>
                     </div>

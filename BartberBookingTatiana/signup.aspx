@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    <div class="container">
+    <div class="container mb-4 mt-4">
         <div class="row">
             <div class="col-md-8 col-lg-6 mx-auto">
                
@@ -47,30 +47,30 @@
                          
                                <div class="form-group">
                                     <label>Email Address</label>
-                                    <asp:TextBox class="form-control" ID="TextBox2" runat="server" placeholder="name@example.com" TextMode="Email"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="emailTextBox" runat="server" placeholder="name@example.com" TextMode="Email"></asp:TextBox>
                                 </div>
                      
                                <div class="form-group">
                                     <label>Contact Phone Number </label>
-                                    <asp:TextBox class="form-control" ID="TextBox3" runat="server" placeholder="0200000000" TextMode="Phone"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="phoneTextBox" runat="server" placeholder="0200000000" TextMode="Phone"></asp:TextBox>
                                 </div>
                      
                                <div class="form-group">
                                     <label>Password</label>
                                    <small class="text-info">Minimum 8 characters</small>
-                                    <asp:TextBox class="form-control" ID="TextBox4" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="passwordTextBox" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                   
                                <div class="form-group">
                                     <label>Repeat Password </label>
-                                    <asp:TextBox class="form-control" ID="TextBox5" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
-                                </div>
-                             
-
-                        
+                                    <asp:TextBox class="form-control" ID="repeatPasswordTextBox" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                </div>                             
+                                
                                 <div class="form-group">
-                                    <a class="signupLink" href="signup.aspx"><input class="btn btn-dark btn-lg btn-block" id="signupButton" type="button" value="Sign Up" /></a>
+                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Table]"></asp:SqlDataSource>
+                                   <asp:Button class="btn btn-primary btn-lg btn-block" ID="signupButton" runat="server" Text="Sign Up"  />
                                 </div>
+
                                 <p class="text-center">Already a member? <a href="userLogin.aspx">Log In</a> </p>
                                 </div>
                                </div>
