@@ -2,9 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid">
+    <div class="container-fluid mb-4 mt-4">
         <div class="row">
-            <div class="col-md-6 col-lg-4 ">
+            <div class="col-lg-5 ">
                
                <div class="shadow p-1 mb-1 bg-light rounded">
                 <div class="card bg-white mb-3">
@@ -37,13 +37,9 @@
                             </div>
                             <div class="col-lg-8">
                                 <label>Appointmnet Status:</label>
-                                <div class="form-group">
-                                    <div class="input-group">
+                                <div class="form-group">                                 
                                         <asp:TextBox class="form-control" ID="TextBox1" runat="server" TextMode="SingleLine" ReadOnly="true" ></asp:TextBox>
-                                        <asp:Button class="btn btn-success" ID="Button1" runat="server" Text="Approve" />
-                                        <asp:Button class="btn btn-danger" ID="Button2" runat="server" Text="Decline" />
-                                        
-                                    </div>
+
                                 </div>
                             </div>
                             </div>
@@ -86,12 +82,20 @@
                      
                                <div class="form-group">
                                     <label>Customer Contact Phone Number </label>
-                                    <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="0200000000" TextMode="Phone"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="0200000000" TextMode="Phone" ReadOnly="true"></asp:TextBox>
                                 </div>
-                         
+<div class="row">
+                         <div class="col-lg-6">
                         <div class="form-group">
-                                    <asp:Button class="btn btn-info btn-lg btn-block mt-6" ID="bookAppointmentBtn" runat="server" Text="Change Appointment" />
+                                    <asp:Button class="btn btn-info btn-lg btn-block mt-6" ID="bookAppointmentBtn" runat="server" Text="Update" />
+                            </div>
                                 </div>
+    <div class="col-lg-6">
+                        <div class="form-group">
+                                    <asp:Button class="btn btn-danger btn-lg btn-block mt-6" ID="deleteAppopintmnetBTN" runat="server" Text="Delete" />
+                            </div>
+                                </div>
+    </div>
                                
                                 </div>
                                </div>

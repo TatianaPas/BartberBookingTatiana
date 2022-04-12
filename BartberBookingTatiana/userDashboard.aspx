@@ -4,9 +4,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    <div class="container-fluid">
+    <div class="container-fluid mb-4 mt-4">
         <div class="row">
-            <div class="col-md-6 col-lg-4 ">
+            <div class="col-lg-5 ">
                
                <div class="shadow p-1 mb-1 bg-light rounded">
                 <div class="card bg-white mb-3">
