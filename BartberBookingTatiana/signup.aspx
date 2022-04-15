@@ -47,29 +47,29 @@
                          
                                <div class="form-group">
                                     <label>Email Address</label>
-                                    <asp:TextBox class="form-control" ID="TextBox2" runat="server" placeholder="name@example.com" TextMode="Email"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="emailTextBox" runat="server" placeholder="name@example.com" TextMode="Email"></asp:TextBox>
                                 </div>
                      
                                <div class="form-group">
                                     <label>Contact Phone Number </label>
-                                    <asp:TextBox class="form-control" ID="TextBox3" runat="server" placeholder="0200000000" TextMode="Phone"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="phoneTextBox" runat="server" placeholder="0200000000" TextMode="Phone"></asp:TextBox>
                                 </div>
                      
                                <div class="form-group">
                                     <label>Password</label>
                                    <small class="text-info">Minimum 8 characters</small>
-                                    <asp:TextBox class="form-control" ID="TextBox4" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="PasswordTextBox" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                   
                                <div class="form-group">
                                     <label>Repeat Password </label>
-                                    <asp:TextBox class="form-control" ID="TextBox5" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="Password2TextBox" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                              
 
                         
                                 <div class="form-group">
-                                    <a class="signupLink" href="signup.aspx"><input class="btn btn-dark btn-lg btn-block" id="signupButton" type="button" value="Sign Up" /></a>
+                                    <asp:Button class="btn btn-info btn-lg btn-block" ID="signupButton" runat="server" Text="Sign Up" OnClick="signupButton_Click" />
                                 </div>
                                 <p class="text-center">Already a member? <a href="userLogin.aspx">Log In</a> </p>
                                 </div>
