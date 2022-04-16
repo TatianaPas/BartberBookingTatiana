@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="BartberBookingTatiana.signup" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="BartberBookingTatiana.signup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    <div class="container mb-4 mt-4">
+    <div class="container">
         <div class="row">
             <div class="col-md-8 col-lg-6 mx-auto">
                
@@ -58,19 +58,19 @@
                                <div class="form-group">
                                     <label>Password</label>
                                    <small class="text-info">Minimum 8 characters</small>
-                                    <asp:TextBox class="form-control" ID="passwordTextBox" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="PasswordTextBox" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                   
                                <div class="form-group">
                                     <label>Repeat Password </label>
-                                    <asp:TextBox class="form-control" ID="repeatPasswordTextBox" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
-                                </div>                             
-                                
-                                <div class="form-group">
-                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Table]"></asp:SqlDataSource>
-                                   <asp:Button class="btn btn-primary btn-lg btn-block" ID="signupButton" runat="server" Text="Sign Up"  />
+                                    <asp:TextBox class="form-control" ID="Password2TextBox" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
+                             
 
+                        
+                                <div class="form-group">
+                                    <asp:Button class="btn btn-info btn-lg btn-block" ID="signupButton" runat="server" Text="Sign Up" OnClick="signupButton_Click" />
+                                </div>
                                 <p class="text-center">Already a member? <a href="userLogin.aspx">Log In</a> </p>
                                 </div>
                                </div>
